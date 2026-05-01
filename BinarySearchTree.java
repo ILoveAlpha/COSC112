@@ -8,7 +8,7 @@ public class BinarySearchTree<V> {
 
     // Insert key-value pair into the BST. The key should be the array index for each respective value.
     // Hint: You may want to create a private helper method that takes a node as a parameter.
-    public void add(int key, V value) {
+    public void add(V value) {
 
     }
 
@@ -31,14 +31,10 @@ public class BinarySearchTree<V> {
 
     }
 
-    // Searches for a key in the BST.
-    // Return value if the key exists in the tree, null otherwise.
-    public V search(int key) {
+    // Searches for a value in the BST.
+    // Return value if the value exists in the tree, null otherwise.
+    public V search(V key) {
 
     }
 
-    // Return key if the value exists in the tree, null otherwise.
-    public int search(V value) {
-
-    }
 }
