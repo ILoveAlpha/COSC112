@@ -1,4 +1,4 @@
-public class BinarySearchTree<V> {
+public class BinarySearchTree<V extends Comparable<V>> {
     private BSTNode<V> _root;
 
     public BinarySearchTree () {
