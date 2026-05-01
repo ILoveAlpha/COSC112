@@ -15,7 +15,6 @@ public class BinarySearchTree<V> {
     // This should preform inorder traversal using the InOrderTraverse(BSTNode<V> node) helper method.
     public void InOrderTraverse() {
         InOrderTraverse(_root);
-        System.out.println();
     }
 
     // This should be the recursive inorder traversal method.
