@@ -32,8 +32,13 @@ public class BinarySearchTree<V> {
     }
 
     // Searches for a key in the BST.
-    // Return true if the key exists in the tree, false otherwise.
-    public boolean search(int key) {
+    // Return value if the key exists in the tree, null otherwise.
+    public V search(int key) {
+
+    }
+
+    // Return key if the value exists in the tree, null otherwise.
+    public int search(V value) {
 
     }
 }
