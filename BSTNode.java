@@ -1,12 +1,18 @@
 public class BSTNode<V> {
-    private V value;
-    public BSTNode<V> left;
-    public BSTNode<V> right;
+    int key;
+    V value;
+    BSTNode<V> left;
+    BSTNode<V> right;
     
-    public BSTNode(V value){
+    public BSTNode(int key, V value){
+        this.key = key;
         this.value = value;
         this.left = null;   
         this.right = null;
+    }
+    
+    public int getKey() {
+        return key;
     }
 
     public V getValue() {
