@@ -73,4 +73,24 @@ public class BinarySearchTree<V extends Comparable<V>> {
         
         return -1;
     }
+
+    public static void main(String[] args) {
+        BinarySearchTree<Integer> testTree = new BinarySearchTree<>();
+
+        for (int i = 0; i < args.length; i++) {
+            int value = Integer.parseInt(args[i]);
+            testTree.add(i, value);
+        }
+
+        System.out.println("InOrder Traversal: ");
+        testTree.InOrderTraverse();
+
+        System.out.println("Height: " + testTree.height());
+
+        System.out.println("Search 5 > key: " + testTree.search(5));
+
+        System.out.println("Search 8 > key: " + testTree.search(8));
+
+        System.out.println("Search 0 > key: " + testTree.search(0));
+    }
 }
