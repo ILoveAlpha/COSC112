@@ -18,4 +18,12 @@ public class BSTNode<V> {
     public V getValue() {
         return value;
     }
+
+    public void setKey(int newKey) {
+        key = newKey;
+    }
+
+    public void setValue(V newValue) {
+        value = newValue;
+    }
 }
