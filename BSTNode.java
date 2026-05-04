@@ -1,6 +1,6 @@
 public class BSTNode<V> {
-    int key;
-    V value;
+    private int key;
+    private V value;
     BSTNode<V> left;
     BSTNode<V> right;
     
