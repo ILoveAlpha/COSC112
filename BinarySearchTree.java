@@ -38,7 +38,7 @@ public class BinarySearchTree<V extends Comparable<V>> {
 
         InOrderTraverse(node.left);
 
-        System.out.println("(" + node.key + ", " + node.value + ")");
+        System.out.println("(" + node.getKey() + ", " + node.getValue() + ")");
 
         InOrderTraverse(node.right);
     }
@@ -64,9 +64,9 @@ public class BinarySearchTree<V extends Comparable<V>> {
         BSTNode<V> cur = _root;
 
         while (cur != null) {
-            int compareV = value.compareTo(cur.value);
+            int compareV = value.compareTo(cur.getValue());
 
-            if (compareV == 0) return cur.key;
+            if (compareV == 0) return cur.getKey();
 
             else if (compareV < 0) cur = cur.left;
 
