@@ -19,7 +19,9 @@ public class BinarySearchTree<V extends Comparable<V>> {
 
         if (compareV < 0) node.left = add(node.left, key, value);
 
-        else if (compareV == 0 || compareV > 0) node.right = add(node.right, key, value);
+        else if (compareV > 0) node.right = add(node.right, key, value);
+
+        else node.key = key;
 
         return node;
     }
@@ -87,10 +89,10 @@ public class BinarySearchTree<V extends Comparable<V>> {
 
         System.out.println("Height: " + testTree.height());
 
-        System.out.println("Search 5 > key: " + testTree.search(5));
+        System.out.println("Search 5 > key: " + testTree.search(5)); // Expected: 5
 
-        System.out.println("Search 8 > key: " + testTree.search(8));
+        System.out.println("Search 8 > key: " + testTree.search(8)); // Expected: 6
 
-        System.out.println("Search 0 > key: " + testTree.search(0));
+        System.out.println("Search 0 > key: " + testTree.search(0)); // Expected: -1
     }
 }
